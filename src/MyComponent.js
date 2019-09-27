@@ -5,11 +5,11 @@ import React from "react";
 // 일반 함수는 자신이 종속된 객체를 this로 가리키고,
 // 화살표 함수는 자신이 종속된 인스턴스를 가리킨다.
 // const triple = (value) => value * 3;
-const MyComponent = props => {
+const MyComponent = ({ name, children }) => {
   return (
     <div>
-      안녕하세요. 제 이름은 {props.name} 입니다. <br />
-      children 값은 {props.children}
+      안녕하세요. 제 이름은 {name} 입니다. <br />
+      children 값은 {children}
       입니다.
     </div>
   );

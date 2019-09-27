@@ -1,18 +1,10 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
+import MyComponent from "./MyComponent";
+import "./App.css";
 
-function App() {
-  const name = '리액트';
-
-  return (
-    <div className="react">
-      {name}
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-  );
-}
+const App = () => {
+  // 컴포넌트 태크 사이에 내용을 보여주는 props가 children이다.
+  return <MyComponent>리액트</MyComponent>;
+};
 
 export default App;
